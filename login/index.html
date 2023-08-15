@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>
+            login Page
+        </title>
+        <style>
+            .login{
+                padding-bottom: 30px;
+                color: brown;
+                margin-left: 20%;
+
+            }
+            *{
+                font-style: italic;
+            }
+            button{
+                background-color: #fc466b; 
+                border-radius: 5px;
+                width:75px;
+                height: 30px;
+                color:white;
+                margin-left: 80px;
+                border: none;
+                
+
+            }
+                      
+            #wholediv{
+                border: 1px solid black ;
+                border-top-right-radius: 50px;
+                border-bottom-left-radius:50px ;
+                width:30%;
+                height: 70%;
+                margin-left: 35%;
+                margin-top: 7%;
+                background: linear-gradient(to top, #3f5efb, #fc466b);
+                                
+            }   
+            body{
+                background:linear-gradient(to right, #3f5efb, #fc466b);
+               
+            }  
+            h1{
+                text-align: center;
+                letter-spacing: 3px;
+                color: white;
+                opacity: 0.7;
+            }  
+            label{
+                font-size: 20px;
+                letter-spacing: 5px;
+                color: white;
+            }
+            input{
+                padding-top: 10px;
+                width: 70%;
+                height: 8%;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid white;
+                color: white;
+                outline:none;              
+                
+            }   
+            .anchor{
+                size: 9px;
+                text-align: center;
+                padding-bottom: 1px; 
+                color:white;
+              
+                
+            } 
+            ::placeholder{
+                color: white;
+                font-style : italic;
+            } 
+               
+        </style>
+    </head>
+   
+    <body> 
+    <form action="LoginServlet" method="GET">
+        <div id="wholediv">
+            <h1 align="center">LOGIN</h1>
+            <div class="login">
+                <label>Username</label><br>
+                 <input type="text" placeholder="Type your username" name="uname"/>
+            </div >
+            <div class="login">
+                <label>Password</label><br>
+                <input type="password" placeholder="Type your password" name="upswd"><br>
+            </div>  
+            <div class="login">  
+                <button>Login</button>
+            </div> 
+            <div class="anchor">
+                <a>Forgot Password</a>
+            </div>  
+    </div>
+    </form>
+    </body>
+</html>
+    
+
+
+
+
+
+
